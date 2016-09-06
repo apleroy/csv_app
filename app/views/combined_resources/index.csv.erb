@@ -1,0 +1,5 @@
+<%- headers = ['Post ID', 'Post Title', 'User ID', 'User Username', 'User Email'] -%>
+<%= CSV.generate_line headers %>
+<%- @combined_posts.each do |post| -%>
+    <%= CSV.generate_line([post.id, post.title, post.user.id, post.user.username, post.user.email]) -%>
+<%- end -%>

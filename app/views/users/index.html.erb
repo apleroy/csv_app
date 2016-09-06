@@ -1,0 +1,40 @@
+<h1>Users</h1>
+<p>All users from <a href="http://jsonplaceholder.typicode.com/users" target="_blank">JSON Placeholder API - Users</a></p>
+<p><%= link_to 'Download CSV', users_path(format: :csv) %></p>
+
+<div class="panel panel-default">
+  <table class="table">
+    <thead>
+    <tr>
+      <th>ID</th>
+      <th>Name</th>
+      <th>Username</th>
+      <th>Email</th>
+      <th>Address Line 1</th>
+      <th>Address Line 2</th>
+      <th>City</th>
+      <th>Zip</th>
+      <th>Phone</th>
+      <th>Website</th>
+    </tr>
+    </thead>
+    <tbody>
+
+    <% @users.each do |user| %>
+        <tr>
+          <td><%= user.id %></td>
+          <td><%= user.name %></td>
+          <td><%= user.username %></td>
+          <td><%= user.email %></td>
+          <td><%= user.address_line1 %></td>
+          <td><%= user.address_line2 %></td>
+          <td><%= user.address_city %></td>
+          <td><%= user.address_zip %></td>
+          <td><%= user.phone %></td>
+          <td><%= user.website %></td>
+        </tr>
+    <% end %>
+
+    </tbody>
+  </table>
+</div>

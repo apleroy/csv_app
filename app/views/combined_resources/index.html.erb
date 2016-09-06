@@ -1,0 +1,33 @@
+<h1>Combined Posts and Users</h1>
+<p>All posts and users from <a href="http://jsonplaceholder.typicode.com" target="_blank">JSON Placeholder APIs - Posts and Users</a></p>
+<p><%= link_to 'Download CSV', combined_resources_path(format: :csv) %></p>
+
+<div class="panel panel-default">
+  <table class="table">
+    <thead>
+    <tr>
+      <th>Post ID</th>
+      <th>Post Title</th>
+      <th>User ID</th>
+      <th>User Username</th>
+      <th>User Email</th>
+    </tr>
+    </thead>
+    <tbody>
+
+    <% @combined_posts.each do |post| %>
+        <tr>
+          <td><%= post.id %></td>
+          <td><%= post.title %></td>
+          <td><%= post.user.id %></td>
+          <td><%= post.user.name %></td>
+          <td><%= post.user.email %></td>
+        </tr>
+    <% end %>
+
+    </tbody>
+  </table>
+</div>
+
+
+
