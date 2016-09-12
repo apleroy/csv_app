@@ -1,28 +1,18 @@
 == README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This application can be found at https://still-sands-46448.herokuapp.com/ (please allow 10 seconds for loading as it is hosted on heroku's free dynos)
 
-Things you may want to cover:
+This application makes GET calls to the JSON Placeholder site and formats the results of the calls into resource pages. The resource pages (shown in the navigation bar) can all be output to CSV.
 
-* Ruby version
+For the assignment results, please visit Combined Posts & Users and export the results to CSV.
 
-* System dependencies
+Notes about this application:
 
-* Configuration
+* The RestClient object makes calls to the JSON rest API's and models them into Post and User objects
 
-* Database creation
+* The RestClient is initialized in the Application Contoller
 
-* Database initialization
+* Basic tests for the RestClient are located in the spec folder
 
-* How to run the test suite
+* Bootstrap is loaded with this application, but the application is not fully mobile responsive
 
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
