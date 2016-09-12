@@ -24,17 +24,6 @@ class RestClient
   end
 
   def get_posts_users
-    # posts = get_posts
-    # users = get_users
-    # @merged = []
-    #
-    # posts.each do |post|
-    #   user = users.find {|u| u['id'] == post['userId']}
-    #   @merged << post.merge(user)
-    # end
-    #
-    # return merged
-
     @users = get_users
     @posts = get_posts
 
