@@ -16,3 +16,4 @@ Notes about this application:
 
 * Bootstrap is loaded with this application, but the application is not fully mobile responsive
 
+* UPDATE 9/21 - This update adds a new link (/sentences) for functionality to add a sentence and return the first non-repeating character
