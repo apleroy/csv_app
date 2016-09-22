@@ -1,5 +1,11 @@
 == README
 
+* UPDATE 9/21 - This update adds a new link (/sentences) for functionality to add a sentence and return the first non-repeating character.
+
+* Sentences are a scaffolded resource with a first_non_repeating_character method.  Basic validation is in the Sentence model.  Rspec tests exist in the spec/models/sentence_spec.rb file (limited html/css styling)
+
+== CSV App and REST Client
+
 This application can be found at https://still-sands-46448.herokuapp.com/ (please allow 10 seconds for loading as it is hosted on heroku's free dynos)
 
 This application makes GET calls to the JSON Placeholder site and formats the results of the calls into resource pages. The resource pages (shown in the navigation bar) can all be output to CSV.
@@ -15,5 +21,3 @@ Notes about this application:
 * Basic tests for the RestClient are located in the spec folder
 
 * Bootstrap is loaded with this application, but the application is not fully mobile responsive
-
-* UPDATE 9/21 - This update adds a new link (/sentences) for functionality to add a sentence and return the first non-repeating character
