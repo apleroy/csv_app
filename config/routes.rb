@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+
+
   get 'combined_resources/index'
 
   get 'users/index'
@@ -16,6 +18,7 @@ Rails.application.routes.draw do
   resources :posts
   resources :users
   resources :combined_resources
+  resources :sentences
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
