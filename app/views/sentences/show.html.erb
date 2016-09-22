@@ -1,9 +1,11 @@
 <p id="notice"><%= notice %></p>
 
 <p>
-  <strong>Input:</strong>
-  <%= @sentence.input %>
+  <strong>Sentence:</strong>
+  <%= @sentence.input %><br>
+  <strong>First non-repeating character of sentence:</strong>
+  <%= @sentence.first_non_repeating_character %><br>
 </p>
 
 <%= link_to 'Edit', edit_sentence_path(@sentence) %> |
-<%= link_to 'Back', sentences_path %>
+<%= link_to 'See All Sentences', sentences_path %>

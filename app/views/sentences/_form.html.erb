@@ -1,4 +1,4 @@
-<%= form_for(@sentence) do |f| %>
+<%= form_for @sentence, :html => { :class => "form-group" } do |f| %>
   <% if @sentence.errors.any? %>
     <div id="error_explanation">
       <h2><%= pluralize(@sentence.errors.count, "error") %> prohibited this sentence from being saved:</h2>
@@ -12,10 +12,12 @@
   <% end %>
 
   <div class="field">
-    <%= f.label :input %><br>
-    <%= f.text_area :input %>
+    <%= f.text_area :input, placeholder: "Type a sentence here (max 1000 characters)", class: "form-control" %>
   </div>
+
+  <br />
+
   <div class="actions">
-    <%= f.submit %>
+    <%= f.submit "Submit", class: "btn btn-default btn-primary" %>
   </div>
 <% end %>
